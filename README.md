@@ -7,7 +7,7 @@ Los pasos 2 y 3 pueden omitirse si tu IDE provee plug-ins que se encarguen de la
 1. Clonar el repositorio.
 ```sh
 git clone https://github.com/jpbiondo/trabajo-practico-restapi.git
-cd trabajo-practico-envers
+cd trabajo-practico-restapi
 ```
 2. Contruir el proyecto. Para armar el proyecto, instalar las dependencias requeridas:
 ```sh
