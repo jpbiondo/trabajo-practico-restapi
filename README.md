@@ -24,20 +24,38 @@ cliente de HTTP.
 ### GET
 - **GET /api/v1/personas**: Obtener lista de todas las personas
 - **GET /api/v1/personas/{id}**: Obtener la persona con el ID especificado.
-- **GET /api/v1/autores**: Obtener lista de todos los autores
-- **GET /api/v1/autores/{id}**: Obtener el autor con el ID especificado.
-- **GET /api/v1/localidades**: Obtener lista de todas las las localidades
-- **GET /api/v1/localidades/{id}**: Obtener la localidad con el ID especificado.
 ### POST
 - **POST /api/v1/personas**: Crear una nueva persona
-- **POST /api/v1/autores**: Crear un nuevo autor
-- **POST /api/v1/localidad**: Crear una nueva localidad
+    - **Formato Body Request**:
+```JSON
+{
+  "id": "number",
+  "nombre": "string",
+  "apellido": "string",
+  "dni": "string",
+  "domicilio": {
+    "id": "number",
+    "calle": "string",
+    "numero": "number"
+  }
+}
+```
 ### PUT
 - **PUT /api/v1/personas/{id}**: Actualizar una persona con el ID especificado.
-- **PUT /api/v1/autores/{id}**: Actualizar un autor con el ID especificado.
-- **PUT /api/v1/localidades/{id}**: Actualizar una localidad con el ID especificado.
+   - **Formato Body Request**:
+```JSON
+{
+  "id": "number",
+  "nombre": "string",
+  "apellido": "string",
+  "dni": "string",
+  "domicilio": {
+    "id": "number",
+    "calle": "string",
+    "numero": "number"
+  }
+}
+```
 ### DELETE
 - **DELETE /api/v1/personas/{id}**: Elimina la persona con el ID especificado.
-- **DELETE /api/v1/autor/{id}**: Elimina el autor con el ID especificado.
-- **DELETE /api/v1/localidades/{id}**: Elimina la localidad con el ID especificado.
 <hr/>
